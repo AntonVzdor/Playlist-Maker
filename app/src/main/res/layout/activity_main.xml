@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--были проблемы с андроид студии и гитом, вроде все исправлено, но ветки скопироваллись
+делаю коммит для того, что бы сделать пулреквест-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
