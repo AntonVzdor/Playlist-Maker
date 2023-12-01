@@ -31,7 +31,7 @@
         android:minHeight="48dp"
         android:paddingStart="16dp"
         android:paddingEnd="12dp"
-        android:paddingRight="40dp"
+
         android:paddingBottom="20dp"
         android:text="@string/black_theme"
         android:textColor="@color/settings_color"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:paddingStart="16dp"
         android:paddingEnd="12dp"
-        android:paddingRight="40dp"
+
         android:paddingBottom="20dp"
         android:fontFamily="@font/ys_display"
         android:gravity="center_vertical"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:paddingStart="16dp"
         android:paddingEnd="12dp"
-        android:paddingRight="40dp"
+
         android:paddingBottom="20dp"
         android:fontFamily="@font/ys_display"
         android:gravity="center_vertical"
@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:paddingStart="16dp"
         android:paddingEnd="12dp"
-        android:paddingRight="40dp"
+
         android:paddingBottom="20dp"
         android:fontFamily="@font/ys_display"
         android:gravity="center_vertical"
