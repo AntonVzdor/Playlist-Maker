@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textSize">24sp</dimen>
-    <dimen name="textSize2">16sp</dimen>
+    <dimen name="textSizeMain">22sp</dimen>
+    <dimen name="textSizeSettings">16sp</dimen>
     <dimen name="cornerRadius">16dp</dimen>
-    <dimen name="marginStart">16dp</dimen>
+    <dimen name="margin16">16dp</dimen>
     <dimen name="marginStart2">64dp</dimen>
     <dimen name="marginEnd">16dp</dimen>
     <dimen name="marginBottom">16dp</dimen>
@@ -14,7 +14,7 @@
     <dimen name="paddingBottom2">64dp</dimen>
     <dimen name="iconPadding">8dp</dimen>
     <dimen name="iconPadding2">28dp</dimen>
-    <dimen name="layout_height2">64dp</dimen>
+    <dimen name="layout_height2">61dp</dimen>
 
 
 </resources>

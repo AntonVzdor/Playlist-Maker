@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/not_afraamerican_ass"
+    android:background="@color/settings_color2"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -20,61 +20,66 @@
             android:gravity="center_vertical"
             android:text="@string/settings"
             android:textColor="@color/settings_color"
-            android:textSize="@dimen/textSize" />
+            android:textSize="@dimen/textSizeMain" />
 
     </androidx.appcompat.widget.Toolbar>
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_height2"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:layout_marginBottom="@dimen/marginBottom2"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
         android:text="@string/black_theme"
         android:textColor="@color/settings_color"
-        android:textSize="@dimen/textSize2"
+        android:textSize="@dimen/textSizeSettings"
         tools:ignore="UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/shareTextView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_height2"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:layout_marginBottom="@dimen/marginBottom2"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
         android:fontFamily="@font/ys_display"
         android:gravity="center_vertical"
         android:text="@string/share_app"
         android:textColor="@color/settings_color"
-        android:textSize="@dimen/textSize2"
+        android:textSize="@dimen/textSizeSettings"
         app:drawableRightCompat="@drawable/ic_baseline_share_24" />
 
     <TextView
         android:id="@+id/callTextView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_height2"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:layout_marginBottom="@dimen/marginBottom2"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
         android:fontFamily="@font/ys_display"
         android:gravity="center_vertical"
         android:text="@string/call_center"
         android:textColor="@color/settings_color"
-        android:textSize="@dimen/textSize2"
+        android:textSize="@dimen/textSizeSettings"
         app:drawableRightCompat="@drawable/ic_baseline_support_agent_24" />
 
     <TextView
         android:id="@+id/agreementTextView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_height2"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginEnd="@dimen/marginEnd"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
         android:fontFamily="@font/ys_display"
         android:gravity="center_vertical"
         android:text="@string/agreement"
         android:textColor="@color/settings_color"
-        android:textSize="@dimen/textSize2"
+        android:textSize="@dimen/textSizeSettings"
         app:drawableRightCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
 
 </LinearLayout>
