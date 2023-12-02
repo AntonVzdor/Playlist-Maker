@@ -15,6 +15,10 @@
     <dimen name="iconPadding">8dp</dimen>
     <dimen name="iconPadding2">28dp</dimen>
     <dimen name="layout_height2">61dp</dimen>
+    <dimen name="paddingStartSetting">16dp</dimen>
+    <dimen name="paddingEndSetting">12dp</dimen>
+    <dimen name="paddingTopSetting">20dp</dimen>
+    <dimen name="paddingBottomSetting">20dp</dimen>
 
 
 </resources>
