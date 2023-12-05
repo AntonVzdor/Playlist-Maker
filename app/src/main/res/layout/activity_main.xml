@@ -3,10 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue"
-    android:orientation="vertical">
+    style="@style/LinearMain">
 
     <TextView
         android:id="@+id/title"
@@ -22,7 +19,7 @@
         app:iconGravity="textStart"
         app:iconPadding="@dimen/iconPadding"
         app:iconTint="@color/black_button"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize"/>
 
     <Button
         android:id="@+id/button_media"
@@ -33,7 +30,7 @@
         app:iconGravity="textStart"
         app:iconPadding="@dimen/iconPadding"
         app:iconTint="@color/black_button"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize"/>
 
     <Button
         android:id="@+id/button_settings"
@@ -44,6 +41,6 @@
         app:iconGravity="textStart"
         app:iconPadding="@dimen/iconPadding"
         app:iconTint="@color/black_button"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize"/>
 
 </LinearLayout>
