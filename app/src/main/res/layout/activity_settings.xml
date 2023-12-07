@@ -6,9 +6,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/settings_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginBottom="24dp"
+        style="@style/Toolbar"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24">
 
         <TextView
