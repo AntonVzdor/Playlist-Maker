@@ -86,4 +86,15 @@
         <item name="android:textSize">@dimen/textSizeSettings</item>
         <item name="android:textColor">@color/settings_color</item>
     </style>
+
+    <style name="SearchTextStyle">
+        <item name="android:textColorHint">@color/YP_Text_Gray</item>
+        <item name="android:drawableTint">@color/YP_Text_Gray</item>
+        <item name="android:backgroundTint">@color/YP_Light_Gray</item>
+    </style>
+
+    <style name="IconSearchStyle">
+        <item name="tint">@color/YP_Text_Gray</item>
+        <item name="android:background">@color/YP_Light_Gray</item>
+    </style>
 </resources>

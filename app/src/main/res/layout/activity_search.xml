@@ -10,34 +10,16 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:paddingStart="4dp"
-        android:paddingTop="4dp"
-        android:paddingEnd="52dp"
-        android:paddingBottom="4dp">
-
-
-        <Button
-            android:id="@+id/back"
-            style="@style/BackSettingsButtonStyle"
-            app:icon="@drawable/arrow_back" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settings_toolbar"
+        style="@style/Toolbar"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24">
 
         <TextView
-            style="@style/TextSettingsStyle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:fontFamily="@font/ys_display_medium"
-            android:paddingStart="14dp"
-            android:paddingTop="10dp"
             android:text="@string/search"
-            android:textFontWeight="500"
-            android:textSize="@dimen/medium_text_size" />
+            style="@style/SettingsText"/>
 
-    </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -51,7 +33,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            android:background="@drawable/search_field"
+            android:background="@drawable/ic_baseline_search_24"
             android:contextClickable="true"
             android:drawableStart="@drawable/search"
             android:drawablePadding="8dp"
@@ -62,7 +44,7 @@
             android:paddingStart="12dp"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textCursorDrawable="@color/YP_Blue"/>
+            android:textCursorDrawable="@color/blue"/>
 
 
 
@@ -77,12 +59,4 @@
             android:src="@drawable/baseline_close_24"
             android:visibility="gone"/>
     </FrameLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/searchRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_track" />
-
 </LinearLayout>
