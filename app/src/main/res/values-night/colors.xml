@@ -13,4 +13,5 @@
     <color name="icon_color">#FFFFFFFF</color>
     <color name="blue">#3772E7</color>
     <color name="back_color">#FFFFFFFF</color>
+    <color name="YP_Text_Gray">#000000</color>
 </resources>

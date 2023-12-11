@@ -19,4 +19,5 @@
     <dimen name="paddingEndSetting">12dp</dimen>
     <dimen name="paddingTopSetting">20dp</dimen>
     <dimen name="paddingBottomSetting">20dp</dimen>
+    <dimen name="medium_text_size">22sp</dimen>
 </resources>

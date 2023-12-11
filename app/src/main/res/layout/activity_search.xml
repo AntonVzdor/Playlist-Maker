@@ -25,17 +25,19 @@
         android:layout_width="match_parent"
         android:layout_height="52dp">
 
+
         <EditText
             android:id="@+id/inputEditText"
-            style="@style/SearchTextStyle"
+            style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            android:background="@drawable/ic_baseline_search_24"
+            android:autofillHints=""
+            android:background="@drawable/search_field"
             android:contextClickable="true"
-            android:drawableStart="@drawable/search"
+            android:drawableStart="@drawable/ic_baseline_search_24"
             android:drawablePadding="8dp"
             android:fontFamily="@font/ys_display_regular"
             android:hint="@string/search"
@@ -44,9 +46,9 @@
             android:paddingStart="12dp"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textCursorDrawable="@color/blue"/>
-
-
+            android:textColorHint="#616161"
+            android:textCursorDrawable="@color/YP_Blue"
+            tools:ignore="DuplicateSpeakableTextCheck,RtlSymmetry,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <ImageView
             android:id="@+id/clearIcon"
@@ -57,6 +59,9 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="28dp"
             android:src="@drawable/baseline_close_24"
-            android:visibility="gone"/>
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
     </FrameLayout>
 </LinearLayout>
+
+
