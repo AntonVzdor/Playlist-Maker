@@ -6,10 +6,11 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+
 //check this
 class SearchActivity : AppCompatActivity() {
     var inputText: String = AMOUNT_DEF
@@ -18,7 +19,7 @@ class SearchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_search)
         val clearButton = findViewById<ImageView>(R.id.clearIcon)
         val inputEditText = findViewById<EditText>(R.id.inputEditText)
-        val backButton = findViewById<Button>(R.id.back)
+        val backButton = findViewById<Toolbar>(R.id.settings_toolbar)
         inputEditText.setText(inputText)
         backButton.setOnClickListener {
             finish()

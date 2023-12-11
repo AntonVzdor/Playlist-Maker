@@ -20,4 +20,12 @@
     <dimen name="paddingTopSetting">20dp</dimen>
     <dimen name="paddingBottomSetting">20dp</dimen>
     <dimen name="medium_text_size">22sp</dimen>
+    <dimen name="settings_text_size">16sp</dimen>
+    <dimen name="settings_height">60dp</dimen>
+    <dimen name="settings_margin_top">20dp</dimen>
+    <dimen name="settings_margin_left">16dp</dimen>
+    <dimen name="settings_margin_right">12dp</dimen>
+    <dimen name="icon_padding">4dp</dimen>
+    <dimen name="main_button_radius">16dp</dimen>
+    <dimen name="main_button_padding">16dp</dimen>
 </resources>
