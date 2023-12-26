@@ -1,4 +1,4 @@
-package com.practicum.playlistmaker
+package com.example.playlistmaker
 
 import android.content.Context
 import android.os.Bundle
@@ -6,13 +6,15 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.practicum.playlistmaker.Track
 
+//check this
 class SearchActivity : AppCompatActivity() {
 
     val trackList: ArrayList<Track> = arrayListOf(
@@ -48,17 +50,19 @@ class SearchActivity : AppCompatActivity() {
         )
     )
 
+
     var inputText: String = AMOUNT_DEF
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
         val clearButton = findViewById<ImageView>(R.id.clearIcon)
         val inputEditText = findViewById<EditText>(R.id.inputEditText)
-        val backButton = findViewById<Button>(R.id.back)
+        val backButton = findViewById<Toolbar>(R.id.settings_toolbar)
         inputEditText.setText(inputText)
         backButton.setOnClickListener {
             finish()
         }
+
         val recyclerView = findViewById<RecyclerView>(R.id.searchRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -83,10 +87,8 @@ class SearchActivity : AppCompatActivity() {
             }
         }
         inputEditText.addTextChangedListener(simpleTextWatcher)
-
         val trackAdapter = TrackAdapter(trackList)
         recyclerView.adapter = trackAdapter
-
     }
 
 
@@ -110,7 +112,6 @@ class SearchActivity : AppCompatActivity() {
             View.VISIBLE
         }
     }
-
     companion object {
         const val TEXT_AMOUNT = "TEXT_AMOUNT"
         const val AMOUNT_DEF = ""
