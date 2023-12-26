@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textSizeMain">22sp</dimen>
-    <dimen name="textSizeSettings">16sp</dimen>
-    <dimen name="cornerRadius">16dp</dimen>
-    <dimen name="margin16">16dp</dimen>
-    <dimen name="marginStart2">64dp</dimen>
-    <dimen name="marginEnd">16dp</dimen>
-    <dimen name="marginBottom">16dp</dimen>
-    <dimen name="marginBottom2">24dp</dimen>
-    <dimen name="paddingTop">16dp</dimen>
-    <dimen name="paddingStart">64dp</dimen>
-    <dimen name="paddingBottom">40dp</dimen>
-    <dimen name="paddingBottom2">64dp</dimen>
-    <dimen name="iconPadding">8dp</dimen>
-    <dimen name="iconPadding2">28dp</dimen>
-    <dimen name="layout_height2">61dp</dimen>
-    <dimen name="paddingStartSetting">16dp</dimen>
-    <dimen name="paddingEndSetting">12dp</dimen>
-    <dimen name="paddingTopSetting">20dp</dimen>
-    <dimen name="paddingBottomSetting">20dp</dimen>
     <dimen name="medium_text_size">22sp</dimen>
     <dimen name="settings_text_size">16sp</dimen>
     <dimen name="settings_height">60dp</dimen>
@@ -28,4 +9,6 @@
     <dimen name="icon_padding">4dp</dimen>
     <dimen name="main_button_radius">16dp</dimen>
     <dimen name="main_button_padding">16dp</dimen>
+
+
 </resources>
