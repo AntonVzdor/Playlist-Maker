@@ -10,21 +10,38 @@
     tools:context=".MainActivity">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/settings_toolbar"
-        style="@style/Toolbar"
-        app:navigationIcon="@drawable/ic_baseline_arrow_back_24">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="52dp"
+        android:paddingBottom="4dp">
+
+
+        <Button
+            android:id="@+id/back"
+            style="@style/BackSettingsButtonStyle"
+            app:icon="@drawable/arrow_back" />
 
         <TextView
+            style="@style/TextSettingsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ys_display_medium"
+            android:paddingStart="14dp"
+            android:paddingTop="10dp"
             android:text="@string/search"
-            style="@style/SettingsText"/>
+            android:textFontWeight="500"
+            android:textSize="@dimen/medium_text_size" />
 
-    </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="52dp">
-
 
         <EditText
             android:id="@+id/inputEditText"
@@ -34,10 +51,9 @@
             android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            android:autofillHints=""
             android:background="@drawable/search_field"
             android:contextClickable="true"
-            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawableStart="@drawable/search"
             android:drawablePadding="8dp"
             android:fontFamily="@font/ys_display_regular"
             android:hint="@string/search"
@@ -46,9 +62,9 @@
             android:paddingStart="12dp"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textColorHint="#616161"
-            android:textCursorDrawable="@color/YP_Blue"
-            tools:ignore="DuplicateSpeakableTextCheck,RtlSymmetry,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            android:textCursorDrawable="@color/YP_Blue"/>
+
+
 
         <ImageView
             android:id="@+id/clearIcon"
@@ -58,15 +74,9 @@
             android:layout_gravity="end"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="28dp"
-            android:background="@color/YP_Light_Gray"
-            android:contentDescription="TODO"
             android:src="@drawable/baseline_close_24"
-            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+            android:visibility="gone"/>
     </FrameLayout>
-
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchRecyclerView"
@@ -75,48 +85,4 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_track" />
 
-    <LinearLayout
-        android:id="@+id/placeholderView"
-
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginTop="102dp"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:visibility="gone">
-
-    <ImageView
-        android:id="@+id/placeholderIV"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        tools:src="@drawable/placeholder_not_find"
-        android:importantForAccessibility="no" />
-
-    <TextView
-        android:id="@+id/placeholderTV"
-        style="@style/FontStyle.Placeholder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal" />
-
-    <Button
-
-        android:id="@+id/refreshButton"
-        style="@style/RefreshButton"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/refresh"
-        android:visibility="gone" />
-
-
 </LinearLayout>
-
-
-    </FrameLayout>
-
-</LinearLayout>
-
-
