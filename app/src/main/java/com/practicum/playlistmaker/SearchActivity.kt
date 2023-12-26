@@ -1,4 +1,4 @@
-package com.example.playlistmaker
+package com.practicum.playlistmaker
 
 import android.content.Context
 import android.os.Bundle
@@ -6,13 +6,12 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.practicum.playlistmaker.Track
 
 //check this
 class SearchActivity : AppCompatActivity() {
@@ -57,7 +56,7 @@ class SearchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_search)
         val clearButton = findViewById<ImageView>(R.id.clearIcon)
         val inputEditText = findViewById<EditText>(R.id.inputEditText)
-        val backButton = findViewById<Toolbar>(R.id.settings_toolbar)
+        val backButton = findViewById<Button>(R.id.back)
         inputEditText.setText(inputText)
         backButton.setOnClickListener {
             finish()
