@@ -1,30 +1,28 @@
-package com.example.playlistmaker
+package com.practicum.playlistmaker
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Switch
-import android.widget.TextView
+import android.widget.Button
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.widget.SwitchCompat
 
 class SettingsActivity : AppCompatActivity() {
-    @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
-        val backButton = findViewById<Toolbar>(R.id.settings_toolbar)
+        val backButton = findViewById<Button>(R.id.back)
         backButton.setOnClickListener { super.finish() }
 
-        val themeSwitch = findViewById<Switch>(R.id.switch1)
+        var themeSwitch = findViewById<SwitchCompat>(R.id.themeSwitch)
 
-        val darkModeFlags = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK// Retrieve the Mode of the App.
-        val isDarkModeOn = darkModeFlags == Configuration.UI_MODE_NIGHT_YES//Check if the Dark Mode is On
+        val DarkModeFlags = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK// Retrieve the Mode of the App.
+        val isDarkModeOn = DarkModeFlags == Configuration.UI_MODE_NIGHT_YES//Check if the Dark Mode is On
         if (isDarkModeOn) {
-            themeSwitch.isChecked = true
+            themeSwitch.setChecked(true)
         }
 
         themeSwitch.setOnCheckedChangeListener { _, checkedId ->
@@ -34,7 +32,7 @@ class SettingsActivity : AppCompatActivity() {
                 false -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
         }
-        val supportButton = findViewById<TextView>(R.id.callTextView)
+        val supportButton = findViewById<FrameLayout>(R.id.supportButton)
         val selectorIntent = Intent(Intent.ACTION_SENDTO).apply {
             data = Uri.parse(
                 "mailto:" + Uri.encode(getString(R.string.my_email)) + "?subject=" + Uri.encode(
@@ -48,7 +46,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
 
-        val shareButton = findViewById<TextView>(R.id.shareTextView)
+        val shareButton = findViewById<FrameLayout>(R.id.shareButton)
         val shareIntent = Intent(Intent.ACTION_SEND).apply {
             type = "text/plain"
             putExtra(Intent.EXTRA_TEXT, getString(R.string.app_link))
@@ -63,7 +61,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
 
-        val userAggreementButton = findViewById<TextView>(R.id.agreementTextView)
+        val userAggreementButton = findViewById<FrameLayout>(R.id.userAggreement)
 
         val internetIntent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse(getString(R.string.user_aggreement_link))
