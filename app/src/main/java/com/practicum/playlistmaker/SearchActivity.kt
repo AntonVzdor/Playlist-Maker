@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-//check this
 class SearchActivity : AppCompatActivity() {
 
     val trackList: ArrayList<Track> = arrayListOf(
@@ -49,7 +48,6 @@ class SearchActivity : AppCompatActivity() {
         )
     )
 
-
     var inputText: String = AMOUNT_DEF
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,7 +59,6 @@ class SearchActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             finish()
         }
-
         val recyclerView = findViewById<RecyclerView>(R.id.searchRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -86,8 +83,10 @@ class SearchActivity : AppCompatActivity() {
             }
         }
         inputEditText.addTextChangedListener(simpleTextWatcher)
+
         val trackAdapter = TrackAdapter(trackList)
         recyclerView.adapter = trackAdapter
+
     }
 
 
@@ -111,6 +110,7 @@ class SearchActivity : AppCompatActivity() {
             View.VISIBLE
         }
     }
+
     companion object {
         const val TEXT_AMOUNT = "TEXT_AMOUNT"
         const val AMOUNT_DEF = ""
